@@ -1,0 +1,8 @@
+[Unit]
+Description=Opponent engine session
+
+[Service]
+ExecStart=/opt/engine/engine
+StandardInput=socket
+User=nobody
+Group=nogroup

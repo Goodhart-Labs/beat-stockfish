@@ -1,0 +1,8 @@
+bases/
+run/
+docs/
+logs/
+.git/
+README.md
+EXPORT.json
+build.sh
