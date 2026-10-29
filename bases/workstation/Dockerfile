@@ -1,8 +1,8 @@
-# syntax=docker/dockerfile:1.4
-# Goodhart Labs' platform-neutral model workstation. Platform adapters may
+# syntax=docker/dockerfile:1.4@sha256:9ba7531bd80fb0a858632727cf7a112fbfd19b17e94c4e84ced81e24ef1a0dbc
+# ZeroPath's platform-neutral model workstation. Platform adapters may
 # build on this image; platform SDKs, controllers, graders, and MCP servers do
 # not belong here.
-FROM docker.io/ubuntu:24.04
+FROM docker.io/ubuntu:24.04@sha256:534baea6a22c03a63003dbc8dbe78fe34bc0d7e595d9a9dc9834884ff530eb55
 
 # Each `|| true` is scoped to its own command: the leading deletes are absent on
 # some base tags, but a failed groupadd/useradd must fail the build. (The ghl

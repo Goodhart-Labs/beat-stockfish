@@ -1,9 +1,9 @@
-# syntax=docker/dockerfile:1.4
+# syntax=docker/dockerfile:1.4@sha256:9ba7531bd80fb0a858632727cf7a112fbfd19b17e94c4e84ced81e24ef1a0dbc
 # Honeyforge's Inspect-runtime runner base (honeyforge-inspect-runner:base):
 # the neutral agent workstation plus the first-party grade entry, nothing
 # else. No platform SDK and no third-party platform code: layers bound to a
 # hosted RL platform must not enter Inspect-runtime images (IP lanes,
-# CLAUDE.md). Assembled by `honeyforge bases build shim` from one named
+# CLAUDE.md). Assembled by `honeyforge ops bases-build shim` from one named
 # context (see honeyforge._bases):
 #   shim-src   the first-party run_grader entry
 ARG WORKSTATION_BASE_IMAGE=honeyforge-workstation:base
